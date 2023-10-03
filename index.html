@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <meta property="og:image" content="/daily/image/thumb-daily.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+
+    <title>&#x110;&#x103;ng nh&#x1EAD;p c&#x1ED9;ng t&#xE1;c vi&#xEA;n</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+        <link href="/favicon_TGDD.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="/favicon_TGDD.ico" rel="apple-touch-icon" />
+        <link href="/favicon_TGDD.ico" rel="apple-touch-icon-precomposed" />
+</head>
+<body>
+   
+    <div class="popup-error" style="display:none">
+        <div class="popup-error__contain">
+            <div class="popup-error__closePop">X</div>
+            <div class="popup-error__content"></div>
+            <div class="popup-error__closeBut">Đóng</div>
+        </div>
+    </div>
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-WKQZL8');
+        </script>
+        <!-- End Google Tag Manager -->
+    <header>
+        <a href="/daily" class="logo-thamdinh">
+            <i class="thamdinh-logo"></i>
+        </a>
+            <div class="col-right" style="display: block;">
+                <span class=""></span>
+                <ul style="display: block;">
+                    <li>
+                        <a href="/daily/quan-ly-don-hang">Quản lý đơn hàng</a>
+                        <a href="/daily/changepassword">Đổi mật khẩu</a>
+                    </li>
+                    <li><a href="javascript:;" class="logout">Đăng xuất</a> </li>
+                </ul>
+            </div>
+    </header>
+    <div class="container ">
+        <main role="main" class="pb-3">
+                    <a href="/daily" class="backhome"><span>‹ </span> Quay lại</a>
+
+            
+
+
+
+<section class="container-login ">
+    <form id="loginForm" class="login" action="">
+        <strong>Đăng nhập</strong>
+        <div class="login-ip">
+            <input type="text" placeholder="Tài khoản" id="UserName" name="UserName" value="">
+        </div>
+        <div class="login-ip">
+            <input type="password" placeholder="Mật khẩu" id="Password" name="Password">
+        </div>
+        <div class="errorLocation"></div>
+        <button class="submitBtn daily">Đăng nhập</button>
+        <button class="submitBtnLogin hide" style="display:block;"></button>
+        <div class="pw">
+            <a href="/daily/forgotpassword">Quên mật khẩu</a>
+        </div>
+        <input type="hidden" value="False" data-val="true" data-val-required="The IsCtvLiveChat field is required." id="IsCtvLiveChat" name="IsCtvLiveChat" />
+        <input type="hidden" value="False" data-val="true" data-val-required="The IsMobileApp field is required." id="IsMobileApp" name="IsMobileApp" />
+        <input type="hidden" id="CurrentLat" name="CurrentLat" value="" />
+        <input type="hidden" id="CurrentLng" name="CurrentLng" value="" />
+        <input type="hidden" id="reCaptchaToken" name="reCaptchaToken" value="" />
+    </form>
+
+    <input name="X-CSRF-TOKEN-OurAppName" type="hidden" value="CfDJ8C7L2wRmHtlApdI-lDjpsGAbQXSN81Q3O4QwcKRkRq2KgmSWCXHWuZs6knz7ZkQeYDrWKrLUQ_kxofipTIU09q8dJUf4_KgAuV6ovRTraoZPk1THGYdgQdgn0u35aPv1imzGzuhrIenwEAcjhhhLE6g" />
+    <input type="hidden" name="DomainDisplayX" value="www.thegioididong.com">
+</section>
+
+
+            <div id="preloader" style="display: none;">
+                <div id="loader"></div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <span>
+            © Copyright 2020 by MWG. All Right Reserved
+        </span>
+    </footer>
+    
+    <script src="demo1.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdM-rUaAAAAAGt03Gb2u5XNu9W5Emyn5le13uJV"></script>
+    <script>
+        createTokenV3();
+        setInterval(function () {
+            createTokenV3();
+        }, 110000);
+        function createTokenV3() {
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6LdM-rUaAAAAAGt03Gb2u5XNu9W5Emyn5le13uJV', { action: 'submitLoginPartner' }).then(function (token) {
+                    console.log(token);
+                    $("#reCaptchaToken").val(token);
+                });
+            });
+        }
+    </script>
+
+   
+</body>
+</html>
